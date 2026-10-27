@@ -27,8 +27,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env
-.env.*
 !.env.example
 
 # vercel
@@ -38,3 +36,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .content-collections
+config.bat

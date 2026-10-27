@@ -1,5 +1,4 @@
 import { Icons } from "@/components/icons";
-import type { ReactNode } from "react";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
@@ -17,20 +16,35 @@ export const DATA = {
   location: "Karachi, Pakistan",
   locationLink: "https://www.google.com/maps/place/karachi",
   description:
-    "Forward Deployed Engineer | AI Integration Engineer. I embed inside real organizations, map how work actually gets done, and ship production AI into those workflows.",
+    "Forward Deployed Engineer | AI Integration Engineer. I embed inside real organizations, map how work actually gets done, and ship production AI into those workflows, from RAG pipelines and agentic workflows to WhatsApp conversational agents.",
   summary:
-    "Forward Deployed Engineer who embeds inside real organizations, maps how work actually gets done, and ships production AI into those workflows without breaking what already works. I replaced paper-based hospital records with a production EHR used by 35 staff, and built WhatsApp-based AI agents and RAG systems for client businesses in the US and EU. I work the full loop: discovery with non-technical stakeholders, design, deployment, staff adoption, and ongoing ownership in production. I also mentor the next generation of Forward Deployed Engineers.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/329496976?v=4",
+    "Forward Deployed Engineer who embeds inside real organizations, maps how work actually gets done, and ships production AI into those workflows without breaking what already works. I replaced paper-based hospital records with a production EHR used by 35 staff, and built WhatsApp-based AI agents and RAG systems for client businesses in the US and EU. My core loop is business process extraction first, then AI that fits the process: RAG pipelines, agentic tool-calling workflows, conversational and voice agents, and safe, evaluated automation with a human in the loop where it matters. I work the full loop: discovery with non-technical stakeholders, design, deployment, staff adoption, and ongoing ownership in production, usually shipping production MVPs on fixed 15-day cycles. I also mentor the next generation of Forward Deployed Engineers.",
+  avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQHJpFzNTpBTDA/profile-displayphoto-scale_200_200/B4DaDIRpj8HgAg-/0/1790066468141?e=2147483647&v=beta&t=2ucZWcomRgstWjRlMm0IMqEizZ1Ec8v8L0JT8BsTlyE",
   skills: [
+    { name: "Agentic AI", icon: Python },
+    { name: "RAG Pipelines", icon: Postgresql },
+    { name: "LLM Apps", icon: Python },
+    { name: "Tool Calling", icon: Nodejs },
+    { name: "MCP", icon: Nodejs },
+    { name: "Voice Agents", icon: Nodejs },
+    { name: "Prompt Engineering", icon: Typescript },
+    { name: "AI Evaluation", icon: Python },
+    { name: "WhatsApp Cloud API", icon: Nodejs },
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
+    { name: "FastAPI", icon: Python },
     { name: "Postgres", icon: Postgresql },
     { name: "Supabase", icon: Postgresql },
+    { name: "Neon", icon: Postgresql },
+    { name: "Prisma", icon: Typescript },
+    { name: "TailwindCSS", icon: ReactLight },
     { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes },
+    { name: "AWS", icon: Docker },
+    { name: "Vercel", icon: NextjsIconDark },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -105,16 +119,6 @@ export const DATA = {
         "Mentored 1,500 students training for Forward Deployed Engineer roles: the stack, the responsibilities of the role, and how to operate inside real companies. Teach business process extraction (mapping workflows and designing AI-assisted processes and SOPs) and safe AI integration (judging whether a task suits AI, and using AI ethically).",
     },
   ],
-  // Intentionally empty for now, typed so the template still type-checks.
-  // Add a real entry here when ready, instead of inventing dates.
-  education: [] as {
-    school: string;
-    href: string;
-    degree: string;
-    logoUrl: string;
-    start: string;
-    end: string;
-  }[],
   projects: [
     {
       title: "Munshi.ai",
@@ -188,14 +192,71 @@ export const DATA = {
       image: "",
       video: "",
     },
+    {
+      title: "QuickStash",
+      href: "https://github.com/talhaali-dev",
+      dates: "2024 - 2025",
+      active: true,
+      description:
+        "Offline-first mobile read-later app, built and shipped solo. Save now, read later, even without a connection.",
+      technologies: [
+        "Mobile",
+        "Offline-first",
+        "SaaS",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Ping Panda",
+      href: "https://github.com/talhaali-dev",
+      dates: "2024 - 2025",
+      active: true,
+      description:
+        "API-as-a-Service product, built and shipped solo for developers who need a simple, reliable API layer.",
+      technologies: [
+        "API",
+        "Node.js",
+        "SaaS",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Restaurant Deal Engine",
+      href: "https://github.com/talhaali-dev",
+      dates: "2025 - Present",
+      active: true,
+      description:
+        "MVP in progress: deal management plus reservation management for restaurants, built around how restaurants actually run offers and bookings.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "TailwindCSS",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Filer for Notion",
+      href: "https://github.com/talhaali-dev",
+      dates: "2026",
+      active: true,
+      description:
+        "Concept and demo: quick-capture app for Notion power users. One input, spoken or typed, auto-filed into the right Notion database with schema-aware routing.",
+      technologies: [
+        "Expo",
+        "OpenRouter",
+        "Notion API",
+        "Typescript",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
   ],
-  // Intentionally empty for now, typed so the template still type-checks.
-  hackathons: [] as {
-    title: string;
-    dates: string;
-    location: string;
-    description: string;
-    image: string;
-    links: { title: string; icon: ReactNode; href: string }[];
-  }[],
 } as const;
