@@ -31,8 +31,8 @@ All personal content lives in the single config file: [src/data/resume.tsx](./sr
 
 # Notes
 
-- The avatar is Talha's GitHub avatar. Work and project logos are intentionally blank (placeholder circles) until real logos are added.
-- Education and hackathons are intentionally empty in `src/data/resume.tsx` rather than filled with invented dates or events. Add them there when ready.
+- The avatar is Talha's LinkedIn profile photo (see `src/data/resume.tsx`). Work and project logos are intentionally blank (placeholder circles) until real logos are added.
+- Education and hackathons sections were removed from the page at Talha's request.
 - The original template's blog posts were not carried over. Add your own posts under `content/` to populate the blog.
 
 # License
